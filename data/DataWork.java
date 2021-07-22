@@ -10,13 +10,13 @@ import src.srccode.interfaces.FileRead;
 public class DataWork {
 	private static boolean restart = true;
 	private static Scanner scanner = new Scanner(System.in);
-	private static String exit = "Exit";
-	private static String readFile = "File";
-	private static String console = "Console";
+	private static final String EXIT = "Exit";
+	private static final String READFILE = "File";
+	private static final String CONSOLE = "Console";
 
 	public static void main(String[] args) throws IOException {
 		while (restart) {
-			FileRead read = new FileReaderImplementation();
+			FileRead read = new FileReadImplementation();
 			Console consol = new ConsoleImplementation();
 
 			File vowelsFile = new File("vowels.txt");
@@ -26,14 +26,14 @@ public class DataWork {
 					"If you wanna work with file please enter File or Console, if you wnat to work with console!");
 
 			String file = scanner.nextLine();
-			if (file.equals(readFile)) {
+			if (file.equals(READFILE)) {
 				// Path to file /home/vlad/eclipse-workspace/WorkWithData/myfile.txt
 				read.process();
 			}
-			if (file.equals(console)) {
+			if (file.equals(CONSOLE)) {
 				consol.getConsole();
 			}
-			if (file.equals(exit)) {
+			if (file.equals(EXIT)) {
 				vowelsFile.delete();
 				consonantFile.delete();
 				System.exit(0);

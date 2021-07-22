@@ -10,7 +10,8 @@ import src.srccode.interfaces.Readers;
 
 public class CommonReaders implements Readers {
 	private static Scanner scanner;
-	private static  List<String> list = new ArrayList<String>();
+	private static List<String> list = new ArrayList<String>();
+
 	@Override
 	public List<String> commonReader() {
 		try {
@@ -29,7 +30,7 @@ public class CommonReaders implements Readers {
 			System.out.println("An error occurred.");
 			e.printStackTrace();
 		}
-		
+
 		return list;
 	}
 }

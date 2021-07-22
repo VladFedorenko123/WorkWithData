@@ -11,6 +11,7 @@ import src.srccode.data.CommonReaders;
 
 class CommonReadersTest {
 	CommonReaders objectUnderTest = new CommonReaders();
+	@SuppressWarnings("unchecked")
 	List<String> mock = Mockito.mock(List.class);
 
 	@Test

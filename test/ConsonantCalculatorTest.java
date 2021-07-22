@@ -8,6 +8,7 @@ import src.srccode.data.ConsonantCalculator;
 
 class ConsonantCalculatorTest {
 	ConsonantCalculator objectUnderTest = new ConsonantCalculator();
+
 	@Test
 	void testGetConsonant() {
 		assertEquals(3, objectUnderTest.getConsonant("vlad"));
