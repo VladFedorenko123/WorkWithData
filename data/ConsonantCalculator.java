@@ -7,6 +7,7 @@ public class ConsonantCalculator implements Consonant {
 
 	public int getConsonant(String str) {
 		Length length = new LengthCalculator();
+		str = str.toLowerCase();
 		int cCount = 0;
 		int k = 0;
 		for (int i = 0; i < length.getLength(str); i++) {

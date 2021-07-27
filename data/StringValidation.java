@@ -10,7 +10,7 @@ public class StringValidation implements ErrorDetection {
 		char[] charArray = str.toCharArray();
 		for (int i = 0; i < charArray.length; i++) {
 			char ch = charArray[i];
-			if (!(ch >= 'a' && ch <= 'z')) {
+			if (!Character.isLetter(ch)) {
 				return false;
 			}
 		}
