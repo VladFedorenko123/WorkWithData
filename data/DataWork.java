@@ -38,6 +38,7 @@ public class DataWork {
 				consonantFile.delete();
 				System.exit(0);
 			}
+			scanner.close();
 		}
 	}
 }

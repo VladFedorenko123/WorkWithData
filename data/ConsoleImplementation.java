@@ -40,5 +40,6 @@ public class ConsoleImplementation implements Console {
 			consonantFile.delete();
 			System.exit(0);
 		}
+		scanner.close();
 	}
 }

@@ -64,10 +64,9 @@ public class CommonReaders implements Readers {
 					list.add(data);
 				}
 				myReader.close();
+				scanner.close();
 			}
-		} catch (
-
-		IOException e) {
+		} catch (IOException e) {
 			System.out.println("An error occurred.");
 			e.printStackTrace();
 		}

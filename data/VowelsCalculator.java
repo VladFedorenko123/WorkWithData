@@ -6,7 +6,7 @@ import src.srccode.interfaces.Vowels;
 public class VowelsCalculator implements Vowels {
 	public int getVowels(String str) {
 		Length length = new LengthCalculator();
-		str=str.toLowerCase();
+		str = str.toLowerCase();
 		int vCount = 0;
 		int k = 0;
 		for (int i = 0; i < length.getLength(str); i++) {
